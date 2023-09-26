@@ -5,7 +5,7 @@ import Blog from "./Blog";
 const Blogs = () => {
     const[blogs,setBlogs]=useState([]);
     useEffect(()=>{
-        fetch('/public/fakeData.json')
+        fetch('/fakeData.json')
         .then(res=>res.json())
         .then(data=>setBlogs(data))
     },[])
