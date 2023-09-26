@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { getStored } from "../../localStorage";
 import { useState } from "react";
 import Donation from "./Donation";
@@ -8,6 +8,7 @@ import Donation from "./Donation";
 const Donations = () => {
     const donations=useLoaderData();
     const [donationNumber,setDonationNumber]=useState([]);
+    const [showData,setShowData]=useState(4);
     useEffect(()=>{
         const stored=getStored();
         if(donations.length){
@@ -23,14 +24,16 @@ const Donations = () => {
         
     },[])
     return (
-        <div className="text-center font-bold text-3xl container mx-auto">
-           <h2>donation:{ donationNumber.length}</h2> 
+        <div className="text-center font-bold text-3xl my-16 container mx-auto">
+           
            <div className="grid grid-cols-2 gap-8 ">
             {
-                donationNumber.map(donate=><Donation key={donate.id} donate={donate}></Donation>)
+                donationNumber.slice(0,showData).map(donate=><Donation key={donate.id} donate={donate}></Donation>)
             }
            </div>
-
+           <div className={showData===donationNumber.length&& 'hidden'}>
+            <Link><button className="btn my-14 bg-red-200 " onClick={()=>setShowData(donationNumber.length)}>Show all</button></Link>
+           </div>
         </div>
     );
 };

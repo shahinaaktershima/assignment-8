@@ -10,6 +10,7 @@ import Home from './component/Home';
 import Error from './component/Error';
 import BlogDetails from './component/Home/Blogs/BlogDetails';
 import Donations from './component/Donation/Donations.jsx';
+import Statistics from './component/Statistics.jsx';
 
 
 const router=createBrowserRouter([
@@ -29,6 +30,11 @@ const router=createBrowserRouter([
         {
           path:'/donation',
           element:<Donations></Donations>,
+          loader:()=>fetch('/fakeData.json')
+        },
+        {
+          path:'/statistics',
+          element:<Statistics></Statistics>,
           loader:()=>fetch('/fakeData.json')
         }
           

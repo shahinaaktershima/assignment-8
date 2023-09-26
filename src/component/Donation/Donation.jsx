@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 
 
 const Donation = ({donate}) => {
-    const{picture,title,category,price,card_bg,category_bg}=donate;
+    const{id,picture,title,category,price,card_bg,category_bg}=donate;
     return (
         <div>
            <div className="card card-side h-[300px] gap-5"  style={{ backgroundColor: card_bg }} >
@@ -11,7 +12,7 @@ const Donation = ({donate}) => {
     <p>{title}</p>
     <p style={{color: category_bg }}>${price}</p>
     <div className="justify-start">
-      <button className="btn border-0 text-white" style={{backgroundColor: category_bg }}>View details</button>
+      <Link to={`/card/${id}`}><button className="btn border-0 text-white" style={{backgroundColor: category_bg }}>View details</button></Link>
     </div>
   </div>
 </div>
