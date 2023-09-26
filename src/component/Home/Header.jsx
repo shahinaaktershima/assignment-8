@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Banner from "./Header/Banner";
 
 // import 'src/assets/Logo.png'
 const Header = () => {
@@ -18,7 +17,7 @@ const Header = () => {
      </ul>
    </div>
  </div>
- <Banner></Banner>
+ 
       </div>
       
  

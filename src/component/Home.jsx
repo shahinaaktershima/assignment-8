@@ -1,12 +1,14 @@
-import { Outlet } from "react-router-dom";
-import Header from "./Home/Header";
+import Blogs from "./Home/Blogs/Blogs";
+import Banner from "./Home/Header/Banner";
+
+
 
 
 const Home = () => {
     return (
         <div>
-           <Header></Header>
-           <Outlet></Outlet>
+            <Banner></Banner>
+           <Blogs></Blogs>
         </div>
     );
 };

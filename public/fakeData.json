@@ -11,18 +11,7 @@
         "description": "Learn the fundamentals of programming in this comprehensive online course.",
         "price": 49.99
       },
-      {
-        "id": 2,
-        "section_id": "education",
-        "picture": "https://i.ibb.co/zF5J44c/Education.png",
-        "title": "Ebook: History of World Wars",
-        "category": "Education",
-        "category_bg": "#3498db",
-        "card_bg": "#ecf0f1",
-        "text_button_bg": "#2ecc71",
-        "description": "Explore the historical events of World Wars I and II with this informative ebook.",
-        "price": 19.99
-      },
+    
       {
         "id": 3,
         "section_id": "clothing",
@@ -35,18 +24,8 @@
         "description": "Stay comfortable and stylish with this classic casual shirt for men.",
         "price": 29.99
       },
-      {
-        "id": 4,
-        "section_id": "clothing",
-        "picture": "https://i.ibb.co/M8k1VxK/Clothing.png",
-        "title": "Women's Workout Leggings",
-        "category": "Clothing",
-        "category_bg": "#e74c3c",
-        "card_bg": "#f5b7b1",
-        "text_button_bg": "#f39c12",
-        "description": "Get active and fit in these comfortable and trendy workout leggings for women.",
-        "price": 24.99
-      },
+    
+     
       {
         "id": 5,
         "section_id": "food",
@@ -58,6 +37,19 @@
         "text_button_bg": "#8e44ad",
         "description": "Enjoy farm-fresh organic vegetables with this delicious vegetable basket.",
         "price": 39.99
+      },
+      
+      {
+        "id": 7,
+        "section_id": "health",
+        "picture": "https://i.ibb.co/VwM0TSx/Health.png",
+        "title": "Fitness Tracker Watch",
+        "category": "Health",
+        "category_bg": "#27ae60",
+        "card_bg": "#a9dfbf",
+        "text_button_bg": "#2e7d32",
+        "description": "Monitor your health and fitness goals with this advanced fitness tracker watch.",
+        "price": 69.99
       },
       {
         "id": 6,
@@ -72,16 +64,28 @@
         "price": 19.99
       },
       {
-        "id": 7,
-        "section_id": "health",
-        "picture": "https://i.ibb.co/VwM0TSx/Health.png",
-        "title": "Fitness Tracker Watch",
-        "category": "Health",
-        "category_bg": "#27ae60",
-        "card_bg": "#a9dfbf",
-        "text_button_bg": "#2e7d32",
-        "description": "Monitor your health and fitness goals with this advanced fitness tracker watch.",
-        "price": 69.99
+        "id": 4,
+        "section_id": "clothing",
+        "picture": "https://i.ibb.co/M8k1VxK/Clothing.png",
+        "title": "Women's Workout Leggings",
+        "category": "Clothing",
+        "category_bg": "#e74c3c",
+        "card_bg": "#f5b7b1",
+        "text_button_bg": "#f39c12",
+        "description": "Get active and fit in these comfortable and trendy workout leggings for women.",
+        "price": 24.99
+      },
+      {
+        "id": 2,
+        "section_id": "education",
+        "picture": "https://i.ibb.co/zF5J44c/Education.png",
+        "title": "Ebook: History of World Wars",
+        "category": "Education",
+        "category_bg": "#3498db",
+        "card_bg": "#ecf0f1",
+        "text_button_bg": "#2ecc71",
+        "description": "Explore the historical events of World Wars I and II with this informative ebook.",
+        "price": 19.99
       },
       {
         "id": 8,

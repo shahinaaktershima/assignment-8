@@ -1,4 +1,7 @@
-import './App.css'
+
+import { Outlet } from "react-router-dom";
+import Header from './component/Home/Header';
+
 
 function App() {
  
@@ -6,7 +9,8 @@ function App() {
   return (
     <>
      
-      <h1>Vite + React</h1>
+    <Header></Header>
+      <Outlet></Outlet>
     
     </>
   )
