@@ -9,6 +9,7 @@ import {
 import Home from './component/Home';
 import Error from './component/Error';
 import BlogDetails from './component/Home/Blogs/BlogDetails';
+import Donations from './component/Donation/Donations.jsx';
 
 
 const router=createBrowserRouter([
@@ -24,7 +25,12 @@ const router=createBrowserRouter([
         },
         {path:'/card/:id',
         element:<BlogDetails></BlogDetails>,
-        loader:()=>fetch('../fakeData.json')}
+        loader:()=>fetch('../fakeData.json')},
+        {
+          path:'/donation',
+          element:<Donations></Donations>,
+          loader:()=>fetch('/fakeData.json')
+        }
           
         
         
