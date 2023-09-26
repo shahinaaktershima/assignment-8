@@ -12,7 +12,7 @@ const BlogDetails = () => {
 
 
     const handleClick=()=>{
-       storedDonation(id);
+       storedDonation(idInt);
       
        
        toast('your donation is successfull');
