@@ -18,9 +18,9 @@ const Banner = () => {
     const value=e.target.name.value;
     // console.log(e.target.name.value);
     // const blog=blogs.find(blog=>value===category);
-    // if(value==='all'){
-    //   setSpecificBlog(blogs)
-    // }
+    if(value==='all'){
+      setSpecificBlog(blogs)
+    }
     if(value==="education"){
       const Education=blogs.filter(blog=>blog.category==="Education");
       setSpecificBlog(Education)
@@ -59,6 +59,7 @@ const Banner = () => {
     </div>
    
   </div>
+  
       <div className="grid grid-cols-3 mt-6 gap-10 container mx-auto">{
         specificBlog.map((blog,idx)=><Blog key={idx} blog={blog}></Blog>)
         }
