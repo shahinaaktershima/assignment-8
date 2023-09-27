@@ -44,14 +44,14 @@ const Banner = () => {
         
     return (
         
-    <div>  <div className="hero max-h-[600px]" style={{backgroundImage: 'url(https://i.ibb.co/DKH5bCV/smiley-female-volunteer-friends-holding-food-donations.jpg)'}}>
+    <div>  <div className="hero max-h-[600px] w-full" style={{backgroundImage: 'url(https://i.ibb.co/DKH5bCV/smiley-female-volunteer-friends-holding-food-donations.jpg)'}}>
     <div className="hero-overlay bg-opacity-30"></div>
-    <div className="hero-content text-center text-neutral-content py-40">
+    <div className="hero-content text-center text-neutral-content md:py-40">
     <div className="space-y-5">
            <h2 className="text-3xl font-bold text-white">I Grow By Helping People In Need</h2>
            
           <form onSubmit={handleClick} action="">
-            <input type="text" name="name" placeholder="search here" className="w-[400px] px-4 py-3 rounded-xl text-2xl font-bold border text-black" />
+            <input type="text" name="name" placeholder="search here" className="w-[200px] md:w-[400px] px-4 py-3 rounded-xl text-2xl font-bold border text-black" />
          <input className="btn px-6 rounded-xl -ml-3 py-7 text-center bg-[#FF444A] text-white border-0" type="submit" value="Search" /></form>
            
            </div>
@@ -60,7 +60,7 @@ const Banner = () => {
    
   </div>
   
-      <div className="grid grid-cols-3 mt-6 gap-10 container mx-auto">{
+      <div className="grid md:grid-cols-2 mt-6 md:gap-10 container mx-auto">{
         specificBlog.map((blog,idx)=><Blog key={idx} blog={blog}></Blog>)
         }
       </div></div>

@@ -27,7 +27,7 @@ const Donations = () => {
     return (
         <div className="text-center font-bold text-3xl my-16 container mx-auto">
            
-           <div className="grid grid-cols-2 gap-8 ">
+           <div className=" grid md:grid-cols-2 gap-8 ">
             {
                 donationNumber.slice(0,showData).map(donate=><Donation key={donate.id} donate={donate}></Donation>)
             }
