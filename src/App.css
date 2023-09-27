@@ -1,14 +1,21 @@
-.image-container {
+.container {
   position: relative;
-  display: inline-block; 
+  width: 100%;
+  height: 300px; /* Set the desired height for your container */
+}
+
+.background {
+  background-color: #3498db; /* Set the background color for your background element */
+  width: 100%;
+  height: 100%;
 }
 
 .overlay {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%; 
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white; 
-  padding: 10px; 
+  width: 100%;
+  height: 50px; /* Set the desired height for your overlay element at the bottom */
+  background-color: rgba(0, 0, 0, 0.7); /* Set the background color and opacity for your overlay */
 }
+

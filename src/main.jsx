@@ -11,6 +11,7 @@ import Error from './component/Error';
 import BlogDetails from './component/Home/Blogs/BlogDetails';
 import Donations from './component/Donation/Donations.jsx';
 import Statistics from './component/Statistics.jsx';
+import Banner from './component/Home/Header/Banner.jsx';
 
 
 const router=createBrowserRouter([
@@ -36,7 +37,12 @@ const router=createBrowserRouter([
           path:'/statistics',
           element:<Statistics></Statistics>,
           loader:()=>fetch('/fakeData.json')
-        }
+        },
+        // {
+        //   path:'/card/:category',
+        //   element:<Banner></Banner>,
+        //   loader:()=>fetch('../fakeData.json')
+        // }
           
         
         

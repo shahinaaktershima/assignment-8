@@ -10,7 +10,7 @@ const Blogs = () => {
         .then(data=>setBlogs(data))
     },[])
     return (
-        <div className="container mx-auto  my-40">
+        <div className="container mx-auto  my-20">
             
            <div className="grid grid-cols-4 gap-5"> {
                 blogs.map(blog=><Blog key={blog.id} blog={blog}></Blog>)

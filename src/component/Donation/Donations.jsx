@@ -11,6 +11,7 @@ const Donations = () => {
     const [showData,setShowData]=useState(4);
     useEffect(()=>{
         const stored=getStored();
+        console.log(stored);
         if(donations.length){
           const donationsGiven=[];
           for(const id of stored){

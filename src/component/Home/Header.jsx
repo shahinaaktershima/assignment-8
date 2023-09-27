@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 
 // import 'src/assets/Logo.png'
 const Header = () => {
-  const image='src/assets/Logo.png';
+  
     return (
       <div>
           <div className="container mx-auto my-5 items-center flex navbar bg-base-100">
    <div className="flex-1" >
-     <img src={image} alt="" />
+     <img src='https://i.ibb.co/XjdGfz6/Logo.png' alt="" />
    </div>
    <div className="flex-none">
      <ul className="menu menu-horizontal px-1 font-bold">
